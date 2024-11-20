@@ -18,25 +18,16 @@ a {
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
-
+img {
+    display: block;
+}
 .container {
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
   }
 
-.hidden:not(:focus):not(:active) {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-      }
+
 
 /* header */
 .page-header {
@@ -123,7 +114,8 @@ color: #434455;
 
 .main {
     background: #2e2f42;
-    padding-bottom: 196px;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .main-title {
@@ -143,13 +135,18 @@ color: #fff;
     display: block;
     margin: 0 auto; 
     padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
     font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
 cursor: pointer;
 color: #fff;
-background-color: #4d5ae5;;
+background-color: #4d5ae5; 
+border-radius: 4px;
+
 }
 
 .main-btn:hover,
@@ -158,6 +155,21 @@ background-color: #4d5ae5;;
 }
 
 /* second section */
+.description {
+    padding: 120px 0;
+}
+.hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 .descr-container {
     margin: 120px 156px;
@@ -167,13 +179,14 @@ background-color: #4d5ae5;;
 .descr-item {
     display: flex;
     justify-content: space-between;
+    width: calc((100% - 72px) / 4);
     gap: 24px;
     margin: 120px 0;
-    width: calc((100% - 72px) / 4);
 }
 
 
 .description-title {
+    margin-bottom: 8px;
     font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -195,6 +208,7 @@ width: 264px;
 
 .our-team {
     background: #f4f4fd;
+    padding: 120px 0;
 }
 
 .team-item {
@@ -204,9 +218,10 @@ gap: 24px;
 max-width: calc((100% - 72px) / 4);
 padding-bottom: 120px;
 
+
 }
 .names {
-padding: 32px 16px;
+padding: 32px 0;
 }
 
  .team-title {
@@ -227,7 +242,7 @@ padding: 32px 16px;
 }
 
 .team-list .title {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -247,6 +262,11 @@ color: #434455;
 
 /* fourth section */
 
+.our-portfolio {
+    padding: 120px 0 120px 0;
+
+}
+
 .portfolio-item {
     display: flex;
     align-items: center;
@@ -264,9 +284,8 @@ color: #434455;
     justify-content: center;
     gap: 8px;
 width: calc((100% - 48px) / 3);
-border-bottom: 1px solid #e7e9fc;
-border-left: 1px solid #e7e9fc;
-border-right: 1px solid #e7e9fc;
+border: 1px solid #e7e9fc;
+border-top: none;
 margin-bottom: 120px;
 }
 
@@ -275,13 +294,15 @@ margin-bottom: 120px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 360px;
     padding-top: 32px;
     padding-bottom: 64px;
+    padding-left: 16px;
 }
 
 .portfolio-title {
+    margin-bottom: 72px;
     padding-top: 120px;
-    padding-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -313,6 +334,7 @@ margin-bottom: 120px;
 
 footer {
     background: #2e2f42;
+    padding: 100px 0;
 }
 
 .footer-logo {
@@ -321,7 +343,7 @@ footer {
 }
 
 .logo {
-    display: block;
+    display: inline-block;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
 font-size: 18px;
