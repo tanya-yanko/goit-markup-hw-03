@@ -184,7 +184,6 @@ border-radius: 4px;
     margin: 120px 0;
 }
 
-
 .description-title {
     margin-bottom: 8px;
     font-weight: 500;
@@ -217,9 +216,8 @@ align-items: center;
 gap: 24px;
 max-width: calc((100% - 72px) / 4);
 padding-bottom: 120px;
-
-
 }
+
 .names {
 padding: 32px 0;
 }
@@ -239,6 +237,7 @@ padding: 32px 0;
 
 .team-list {
     background: #fff;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-list .title {
@@ -274,7 +273,7 @@ color: #434455;
     flex-wrap: wrap;
     margin-top: 72px;
     column-gap: 24px;
-    row-gap: 24px;
+    gap: 24px;
 }
 
 .portfolio-list {
@@ -297,7 +296,6 @@ margin-bottom: 120px;
     align-items: flex-start;
     width: 360px;
     padding-top: 32px;
-    padding-bottom: 64px;
     padding-left: 16px;
 }
 
