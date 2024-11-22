@@ -171,17 +171,10 @@ border-radius: 4px;
     overflow: hidden;
   }
 
-.descr-container {
-    margin: 120px 156px;
-    width: calc((100% - 72px) / 4);
-}
-
 .descr-item {
     display: flex;
-    justify-content: space-between;
     width: calc((100% - 72px) / 4);
     gap: 24px;
-    margin: 120px 0;
 }
 
 .description-title {
@@ -271,9 +264,7 @@ color: #434455;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 72px;
-    column-gap: 24px;
-    gap: 24px;
+    gap: 72px 24px;
 }
 
 .portfolio-list {
